@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Property Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .card {
+            position: relative;
+            max-width: 100%;
+            height: 250px;
+            background-image: url('property-image.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+        .breadcrumbs {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .property-image {
+            flex: 2;
+        }
+        .property-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .property-details {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .property-details h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .property-details .tag {
+            display: inline-block;
+            background-color: #d1a684;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .info-card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .info-card div {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .info-card div img {
+            margin-right: 10px;
+        }
+        
+
+.BestDeal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    border-radius: 8px;
+ 
+    margin: 20px auto;
+    max-width: 1100px;
+  }
+  .headline {
+    color: #333;
+  }
+  .headline h3 {
+    margin: 0;
+    color: #ff5722;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .headline h1 {
+    margin: 10px 0 0;
+    font-size: 24px;
+  }
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }
+  .btn-orange {
+    background-color: #ff5722;
+  }
+  .btn-black {
+    background-color: #333;
+  }
+
+  
+.containerwaaaye {
+    max-width: 1100px;
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    background-color: gray;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.left-section {
+    flex: 1;
+    align-items: center;
+}
+
+.deal-text {
+    color: #d84b4b;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.property-details {
+    background-color: #f3f3f3;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.detail strong {
+    color: #d84b4b;
+}
+
+.right-section {
+    flex: 1;
+}
+
+.right-section img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    margin-top: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="breadcrumbs">Home / Single Property</div>
+            <div class="title">Single Property</div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="property-image">
+            <img src="https://themewagon.github.io/VillaAgency/assets/images/single-property.jpg" alt="Property Image">
+        </div>
+        <div class="property-details">
+            <span class="tag">Appartment</span>
+            <h2>24 New Street Miami, OR 24560</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dolor mauris. Integer in vehicula felis.</p>
+            <div class="info-card">
+                <div><img src="icon1.png" alt="Icon 1"> 450 m2 Total Area</div>
+                <div><img src="icon2.png" alt="Icon 2"> Contract: Contract Ready</div>
+                <div><img src="icon3.png" alt="Icon 3"> Payment: Payment Process</div>
+                <div><img src="icon4.png" alt="Icon 4"> Safety: 24/7 Under Control</div>
+            </div>
+            <h3>Best useful links:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula ex nec lacus pretium, id fermentum velit tincidunt.</p>
+        </div>
+    </div>
+
+
+    <div class="BestDeal">
+        <div class="headline">
+          <h3>Best Deal</h3>
+          <h1>Find Your Best Deal Right Now!</h1>
+        </div>
+        <div class="buttons">
+          <button class="btn-orange">Appartment</button>
+          <button class="btn-black">Villa House</button>
+          <button class="btn-black">Penthouse</button>
+        </div>
+      </div>
+    <div class="containerwaaaye">
+        <div class="left-section">
+            
+            <div class="property-details">
+                <div class="detail"><span>Total Flat Space</span> <strong>185 m2</strong></div>
+                <div class="detail"><span>Floor number</span> <strong>26th</strong></div>
+                <div class="detail"><span>Number of rooms</span> <strong>4</strong></div>
+                <div class="detail"><span>Parking Available</span> <strong>Yes</strong></div>
+                <div class="detail"><span>Payment Process</span> <strong>Bank</strong></div>
+            </div>
+        </div>
+        
+        <div class="right-section">
+            <img src="https://via.placeholder.com/500x300" alt="Property Image">
+            </div>
+            <div class="info-text">
+                <h3>Extra Info About Property</h3>
+                <p>Lorem ipsum dolor  <br/> sit amet, <br/> consectetur  <br/> adipiscing elit. Duis euismod.</p>
+                <p>When you need free CSS templates,  <br/> search for TemplateMo  <br/>Portfolio.</p>
+                <button class="visit-btn">🗓 Schedule a visit</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
